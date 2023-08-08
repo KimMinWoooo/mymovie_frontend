@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="src/main.js" type="module"></script>
+  <script src="src/pagination.js" type="module"></script>
+
+</head>
+
+<body>
+  <header><div class="video-background">
+    <!-- 배경 영역에 video넣기. -->
+  </div></header>
+  <section class="title">
+    <h1>MYMOVIE</h1>
+    <label>Search Movie by its title </label>
+    <form class="search">
+      
+      <input type="text" id="search-input" placeholder="검색할 영화 제목을 입력해주세요." autofocus />
+      <button type="submit" id="search-btn">검색</button>
+    </form>
+  </section>
+  <div id="filter-menu">
+    <select id="select-country">
+      <option value="all">전체</option>
+      <option value="korea">한국</option>
+      <option value="america">미국</option>
+      <option value="japan">일본</option>
+      <option value="etc">기타</option>
+    </select>
+    <div class="filter-btns">
+      <button class="filter-title" id="filter-title">제목▼</button>
+      <button class="filter-rate" id="filter-rate">평점▼</button>
+      <button class="filter-like" id="filter-like">좋아요수▼</button>
+    </div>
+  </div>
+  <!-- movie-wrap에 영화 카드를 추가하기. -->
+  <section class="movie-wrap"></section>
+  <footer>
+   
+  </footer>
+</body>
+
+</html>
