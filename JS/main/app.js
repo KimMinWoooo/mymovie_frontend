@@ -1,11 +1,7 @@
-
-// 검색 기능 : 대소문자 관계없이, enter입력해도 검색 클릭과 동일한 기능
 const findTitle = function (movies) {
-  // input값 가져와서 title과 비교하기
+  
   let search = document.getElementById("search-input").value.toLowerCase();
 
-  // 버튼 클릭이나 엔터 키 입력되었을 때 실행
-  // 검색 검사
   if (search.length <= 0) {
     alert("검색어를 입력해주세요.");
   } else {
@@ -21,7 +17,6 @@ const findTitle = function (movies) {
   }
 };
 
-// 이벤트 관리
 function setEventListeners(movies) {
   const form = document.querySelector(".search");
   // 검색창에 입력 수행 시
@@ -109,7 +104,7 @@ function orderByRate(movies) {
 }
 // 투표수에 따른 정렬 함수
 function orderByVote(movies) {
-  const element = document.getElementById("filter-vote");
+  const element = document.getElementById("filter-like");
   element.addEventListener("click", function () {
     const lastChar = element.textContent.charAt(element.textContent.length - 1);
     movies.sort(function (a, b) {
