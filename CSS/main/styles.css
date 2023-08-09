@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
   list-style: none;
 }
 
-header {
+#container {
   width: 100%;
   height: 25%;
   background-image: linear-gradient(
@@ -14,10 +16,43 @@ header {
       rgba(0, 0, 0, 100%)
     ),
     url(https://www.mexicoescultura.com/galerias/actividades/principal/land.jpg);
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  list-style: none; /*list 점 삭제*/
+} 
+
+/*header*/
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  line-height: 60px;
+}
+.wrapper li a:hover{
+  color: blue;
+}
+
+.wrapper ul, .wrapper li, .wrapper-title, 
+.wrapper-title h1, .wrapper-info-1, .wrapper-info-2
+{
+  display: inline;
+}
+
+.wrapper-title h1 {
+  font-family:'Merienda', cursive; /*font 가져옴*/
+  font-weight:700;
+  font-size: 1em; /* 얘 크가가 커질수록 영화,커뮤니티랑 로그민,회원가입, 검색이랑 라인이 안맞아짐 어케해야할까?*/
+  color:#fff; 
+  text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+}
+
+.wrapper-info-1 li a, .wrapper-info-2 li a{
+  font-size:1.1em;
+  color:#fff; 
+  font-weight:600;  /* 글자 굵기 */
+  padding:10px 20px; /* 간격 */
+  text-decoration: none; /* href="#" 밑줄 제거 */
 }
 
 
@@ -30,3 +65,13 @@ body {
 
   font-family: "Noto Sans KR", sans-serif;
 }
+
+.title > label {
+  font-size : 2em;      
+}
+
+
+/* 중앙에 꼽아버리는 알아두면 유용한 코드
+  display: flex;
+  justify-content: center;
+  align-items: center; */

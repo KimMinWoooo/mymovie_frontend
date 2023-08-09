@@ -11,13 +11,33 @@
 </head>
 
 <body>
-  <header>
-    
+  <div id="container">
+    <!-- 로고부분 -->
+    <header class="wrapper">
+      <!-- 로고부분과 로그인 회원가입을 div로 묶기 -->
+      <div class="wrapper-title">
+        <!--민재가 만든 이미지 넣을거면 아래 코드로, 크기 조정필요-->
+        <!--<h1><a href="index.html"><img src="../images/logo.png" alt="로고"></a></h1>-->
+        <h1>MyMoive</h1>
+        <div class="wrapper-info-1">
+          <ul>
+              <li><a href="#">영화</a></li>
+              <li><a href="#">커뮤니티</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 나머지부분 묶기 -->
+      <ul class="wrapper-info-2">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">검색</a></li>
+      </ul>
   </header>
+<hr>
+
   <section class="title">
-    <h1>MYMOVIE</h1>
     <label>Search Movie by its title </label>
-    <form class="search">
+    <form class="search" method="post" name="movie">
       
       <input type="text" id="search-input" placeholder="검색할 영화 제목을 입력해주세요." autofocus />
       <button type="submit" id="search-btn">검색</button>
@@ -42,6 +62,7 @@
   <footer>
    
   </footer>
+</div>
 </body>
 
 </html>
