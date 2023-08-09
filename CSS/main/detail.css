@@ -57,6 +57,12 @@
   padding:10px 30px; /* 간격 */
 }
 
+.wrapper-title{
+  margin-left: -100px;
+}
+.wrapper-info-2{
+  margin-right: -100px;
+}
 
 body {
   width: 100%;

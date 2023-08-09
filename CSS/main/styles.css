@@ -41,13 +41,6 @@
   
 }
 
-.wrapper-title{
-  margin-left: -100px;
-}
-.wrapper-info-2{
-  margin-right: -100px;
-}
-
 .wrapper-title h1 {
   font-family:'Merienda', cursive; /*font 가져옴*/
   font-weight:700;
@@ -65,7 +58,12 @@
   font-weight:600;  /* 글자 굵기 */
   padding:10px 30px; /* 간격 */
 }
-
+.wrapper-title{
+  margin-left: -100px;
+}
+.wrapper-info-2{
+  margin-right: -100px;
+}
 /*흠..*/
 body {
   width: 100%;
@@ -92,8 +90,10 @@ body {
 #search-input {
   width: 80%;
   height: 50px;
-  border-style: solid;
   border-radius: 25px;
+  font-size: 20px;
+  padding: 15px;
+
 }
 
 #search-btn{
