@@ -12,12 +12,8 @@
 
 <body>
   <div id="container">
-    <!-- 로고부분 -->
     <header class="wrapper">
-      <!-- 로고부분과 로그인 회원가입을 div로 묶기 -->
       <div class="wrapper-title">
-        <!--민재가 만든 이미지 넣을거면 아래 코드로, 크기 조정필요-->
-        <!--<h1><a href="index.html"><img src="../images/logo.png" alt="로고"></a></h1>-->
         <a href="index.html">
           <h1>MyMovie</h1>
         </a>
@@ -29,26 +25,26 @@
         </div>
       </div>
       <!-- 나머지부분 묶기 -->
-      <ul class="wrapper-info-2">
-          <li><a href="../login/login_page.html">로그인</a></li>
-          <li><a href="#">회원가입</a></li>
-          <li><a href="#">검색</a></li>
-      </ul>
-  </header>
+          <ul class="wrapper-info-2">
+              <li><a href="../login/login_page.html">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">검색</a></li>
+          </ul>
+    </header>
 
   <section class="title">
     <label>영화찾기 사이트 MyMovie입니다.</label><br>
     <div>
-    <form class="search" action="#" method="post" name="movie">
-      <input type="text" id="search-input" name="searchMovie" placeholder="검색할 영화 제목을 입력해주세요."" autofocus />      
-      <button type="submit" id="search-btn">검색</button>
-    </form>
+      <form class="search" action="#" method="post" name="movie">
+        <input type="text" id="search-input" name="searchMovie" placeholder="검색할 영화 제목을 입력해주세요."" autofocus />      
+        <button type="submit" id="search-btn">검색</button>
+      </form>
     </div>
   </section>
 
-
-  <div id="filter-menu">
-    <select id="select-country">
+<!-- 여기는 뭐 어케 할지 모르겠다-->
+  <div class="filter-menu">
+    <select class="select-country">
       <option value="all">전체</option>
       <option value="korea">한국</option>
       <option value="america">미국</option>
@@ -62,7 +58,8 @@
     </div>
   </div>
   <!-- movie-wrap에 영화 카드를 추가하기. -->
-  <section class="movie-wrap"></section>
+  <section class="movie-wrap">
+  </section>
   <footer>
    
   </footer>
