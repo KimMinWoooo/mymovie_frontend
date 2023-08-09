@@ -1,22 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie</title>
+  <link rel="stylesheet" href="../../CSS/community/maincommu.css" />
+  <!-- <script src="../../JS/main/app.js" type="module"></script> -->
     <style>
         /* CSS 스타일은 여기에 작성해주세요 (생략) */
     </style>
 </head>
 <body>
     <header>
-        <div id="moviehead">
-            <h1 class="home_go"> 
-                <a href="../main/index.html" id="going_home">
-                    <span class="sr_only">MovieLove</span>
-                </a>
-            </h1>
-            <h2>Movie Community</h2>
-        </div>
+    <!-- 로고부분 -->
+    <header class="wrapper">
+        <!-- 로고부분과 로그인 회원가입을 div로 묶기 -->
+        <div class="wrapper-title">
+          <!--민재가 만든 이미지 넣을거면 아래 코드로, 크기 조정필요-->
+          <!--<h1><a href="index.html"><img src="../images/logo.png" alt="로고"></a></h1>-->
+          <a href="../../HTML/main/index.html">
+            <h1>MyMovie</h1>
+          </a>
+          <div class="wrapper-info-1">
+            <ul>
+                <li><a href="detail.html">영화</a></li>
+                <li><a href="../community/maincommu.html">커뮤니티</a></li>
+            </ul>
+          </div>
+        </div>        
+            <ul class="wrapper-info-2">
+               <li><a href="../login/login_page.html">로그인</a></li>
+               <li><a href="#">회원가입</a></li>
+               <li><a href="#">검색</a></li>
+            </ul>
+    </header>
+
+        <h2>Movie Community</h2>
+
         <nav class="commu_nav" id="cmu_nav">
             <span class="write_cmu">
                 <a href="commu.html" class="link_btn">
@@ -35,7 +57,21 @@
                 <!-- 이 자리에 탭 메뉴들 추가하기 -->
             </ul>
         </nav>
-    </header>
+<main>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script>
         function toggleSearch() {

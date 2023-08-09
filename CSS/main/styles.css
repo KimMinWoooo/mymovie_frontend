@@ -41,6 +41,13 @@
   
 }
 
+.wrapper-title{
+  margin-left: -100px;
+}
+.wrapper-info-2{
+  margin-right: -100px;
+}
+
 .wrapper-title h1 {
   font-family:'Merienda', cursive; /*font 가져옴*/
   font-weight:700;
@@ -49,7 +56,9 @@
   text-shadow:0 -1px 0 #222;  /* 그림자 색 */
   padding: 20px;
 }
-
+.wrapper-info-1 li {
+  line-height: 50px;
+}
 .wrapper-info-1 li a, .wrapper-info-2 li a{
   font-size:1.1em;
   color:#fff; 
