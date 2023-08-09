@@ -120,19 +120,18 @@ justify-content: center;
 align-items: center; */
 
 
-
-.select-country{
+.select-genre{
   display: flex;
-  justify-content: left;
+  justify-content: flex-end;
   align-items: center;
-  margin-left: 110px;
+  margin-right: 50px;
 }
-.select-country option {
+.select-genre option {
   background-color: chocolate; /* 작업 구역 확인용, 지워도 됨*/
 }
 select {
   text-align: center;
-  width: 10%;
-  height: 50px;
-  font-size: 2em;
+  width: 8%;
+  height: 30px;
+  font-size: 1.3em;
 }

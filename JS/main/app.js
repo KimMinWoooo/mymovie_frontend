@@ -29,99 +29,38 @@ function setEventListeners(movies) {
 window.displayMovies = displaymovies;
 window.movieData = movieData;
 
-// main
+// main 데이터 갖고오면 여기에 담아지게? ★
 loadmovies().then((movies) => {
   movieData(movies);
   displaymovies(movies);
   setEventListeners(movies);
-  orderByTitle(movies);
-  orderByRate(movies);
-  orderByVote(movies);
-  orderByCountry(movies);
+  orderBygenre(movies);
 });
 
-// 알파벳 순서에 따른 정렬 함수
-function orderByTitle(movies) {
-  const element = document.getElementById("filter-title");
-  element.addEventListener("click", function () {
-    const lastChar = element.textContent.charAt(element.textContent.length - 1);
-    movies.sort(function (a, b) {
-      if (a.title && b.title) {
-        return lastChar === "▼"
-          ? a.title.localeCompare(b.title)
-          : b.title.localeCompare(a.title);
-      }
-      return 0;
-    });
-    displaymovies(movies);
-    changeArrow(element);
+// 장르에 따른 영화 분류 함수 -> ★에서 가져오는식
+function orderBygenre(movies) {
+
+const dropdown = document.querySelector(".select-genre");
+
+// 장르 선택에 따라 영화 필터링 함수
+const filterAndDisplayMovies = (selectedOption, movies) => {
+  const filterMovies = movies.filter((movie) => {
+    const genres = movie.genres; // 영화 장르 가져오기
+
+    if (selectedOption === "all") {
+      return true; 
+    } else if (genres.includes(selectedOption)) {
+      return true; 
+    }
+
+    return false; 
   });
-}
-// 나라에 따른 영화 분류 함수
-function orderByCountry(movies) {
-  const dropdown = document.getElementById("select-country");
 
-  dropdown.addEventListener("change", function () {
-    const selectedOption = dropdown.options[dropdown.selectedIndex].value;
+  displaymovies(filterMovies);
+};
 
-    const filterMovies = movies.filter(function (movie) {
-      let language = movie.original_language;
-
-      if (selectedOption === "korea" && language === "ko") {
-        return movie;
-      } else if (selectedOption === "america" && language === "en") {
-        return movie;
-      } else if (selectedOption === "japan" && language === "ja") {
-        return movie;
-      } else if (
-        selectedOption === "etc" &&
-        language !== "ko" &&
-        language !== "en" &&
-        language != "ja"
-      ) {
-        return movie;
-      } else if (selectedOption === "all") {
-        return movie;
-      }
-    });
-    displaymovies(filterMovies);
-  });
-}
-
-// 평점에 따른 정렬 함수
-function orderByRate(movies) {
-  const element = document.getElementById("filter-rate");
-  element.addEventListener("click", function () {
-    const lastChar = element.textContent.charAt(element.textContent.length - 1);
-    movies.sort(function (a, b) {
-      return lastChar === "▼"
-        ? a.vote_average - b.vote_average
-        : b.vote_average - a.vote_average;
-    });
-    displaymovies(movies);
-    changeArrow(element);
-  });
-}
-// 투표수에 따른 정렬 함수
-function orderByVote(movies) {
-  const element = document.getElementById("filter-like");
-  element.addEventListener("click", function () {
-    const lastChar = element.textContent.charAt(element.textContent.length - 1);
-    movies.sort(function (a, b) {
-      return lastChar === "▼"
-        ? a.vote_count - b.vote_count
-        : b.vote_count - a.vote_count;
-    });
-    displaymovies(movies);
-    changeArrow(element);
-  });
-}
-
-function changeArrow(element) {
-  const lastChar = element.textContent.charAt(element.textContent.length - 1);
-  const newStr =
-    lastChar === "▼"
-      ? element.textContent.slice(0, -1) + "▲"
-      : element.textContent.slice(0, -1) + "▼";
-  element.textContent = newStr;
-}
+dropdown.addEventListener("change", function () {
+  const selectedOption = dropdown.value;
+  filterAndDisplayMovies(selectedOption, movies);
+});
+};
