@@ -57,7 +57,7 @@
   padding:10px 30px; /* 간격 */
 }
 
-/*흠..*/
+
 body {
   width: 100%;
   height: 100vw;
@@ -65,36 +65,3 @@ body {
   color: white;
   font-family: "Noto Sans KR", sans-serif;
 }
-
-/*검색창 꾸미기*/
-.search, .title label{
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.title label {
-  font-size : 2.5em;
-  margin-top: 50px;
-  font-weight: 500;
-  text-shadow: 0 -1px 0 #222;      
-}
-
-#search-input {
-  width: 80%;
-  height: 50px;
-  border-style: solid;
-  border-radius: 25px;
-}
-
-#search-btn{
-  width: 100px;
-  height: 50px;
-  border-radius: 25px;
-}
-
-
-/* 중앙에 꼽아버리는 알아두면 유용한 코드
-  display: flex;
-  justify-content: center;
-  align-items: center; */

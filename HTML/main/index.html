@@ -18,11 +18,13 @@
       <div class="wrapper-title">
         <!--민재가 만든 이미지 넣을거면 아래 코드로, 크기 조정필요-->
         <!--<h1><a href="index.html"><img src="../images/logo.png" alt="로고"></a></h1>-->
-        <h1>MyMoive</h1>
+        <a href="index.html">
+          <h1>MyMovie</h1>
+        </a>
         <div class="wrapper-info-1">
           <ul>
               <li><a href="#">영화</a></li>
-              <li><a href="#">커뮤니티</a></li>
+              <li><a href="maincommu.html">커뮤니티</a></li>
           </ul>
         </div>
       </div>
@@ -33,16 +35,18 @@
           <li><a href="#">검색</a></li>
       </ul>
   </header>
-<hr>
 
   <section class="title">
-    <label>Search Movie by its title </label>
-    <form class="search" method="post" name="movie">
-      
-      <input type="text" id="search-input" placeholder="검색할 영화 제목을 입력해주세요." autofocus />
+    <label>영화찾기 사이트 MyMovie입니다.</label><br>
+    <div>
+    <form class="search" action="#" method="post" name="movie">
+      <input type="text" id="search-input" name="searchMovie" placeholder="검색할 영화 제목을 입력해주세요." autofocus />      
       <button type="submit" id="search-btn">검색</button>
     </form>
+    </div>
   </section>
+
+
   <div id="filter-menu">
     <select id="select-country">
       <option value="all">전체</option>
