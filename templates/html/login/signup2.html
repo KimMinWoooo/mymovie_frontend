@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyMovie 로그인 페이지</title>
+    <title>MyMovie 회원가입 페이지</title>
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/static/css/login/login.css">
+    <link rel="stylesheet" href="/static/css/login/signup.css">
 </head>
 <body>
   <h1 class="a11y-hidden">MyMovie</h1>
 
   <main>
     <header>
-      <h2>로그인 또는 회원가입</h2>
+      <h2>회원가입</h2>
       <a href="/templates/html/main/index.html">
         <button type="button" class="btn-x"></button>
       </a>
@@ -24,23 +24,38 @@
       <div class="wrapper">
         <h3>MyMovie에서 여러분의 영화를 찾으세요! :) </h3>
         
-        <form class="wrapper-idpw">
-          <input type="text" id="inpID" class="inp ID" placeholder="아이디"></input>
-          <label for="inpID" class=""></label>
+        <form class="wrapper-idpw" action="#" target="#" method="post" name="signup" autocomplete="on">
+          <label for="inpID" class="">아이디</label>
+          <input type="text" id="inpID" class="inp ID" placeholder="아이디를 입력해주세요"></input>
+          
   
           <p class="error ID">아이디를 입력해 주세요</p>
   
-          <input type="password" id="inpPS" class="inp PS" placeholder="비밀번호"></input>
-          <label for="inpPS" class=""></label>
-          </form>
+          <label for="inpPS" class="">비밀번호</label>
+          <input type="password" id="inpPS" class="inp PS" placeholder="비밀번호를 입력해주세요"></input>
+          
+          <label for="inpPS" class="">생년월일</label>
+          <input type="date" id="inpBt" class="inp Bt"></input>
+          
+          <label for="inpPS" class="">이름</label>
+          <input type="name" id="inpN" class="inp N" placeholder="이름을 입력해주세요"></input>
+          
+          <label for="inpPS" class="">전화번호</label>
+          <input type="tel" id="inpT" class="inp T" placeholder="전화번호를 입력해주세요"></input>
+          
+
+          <input type="submit" class="signup" value="가입하기">
+
+        </form>
         </div>
       </div>
     
-
+      <!--
       <input type="checkbox" id="inpHold" class="inphold txt-hide">
       <label for="inpHold" class="labl-hold">로그인 상태 유지</label>
+      -->
       
-      
+      <!--
       <button class="btn-login">로그인</button>
     
       <div class="side-tool">
@@ -49,7 +64,9 @@
         <button>아이디/비밀번호 찾기</button>
       </div>
     </section>
-  
+    -->
+
+    <!--
     <p class="line">또는</p>
   
     <ul class="difLogin">
@@ -58,6 +75,7 @@
       <li><a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/" class="naver">네이버 계정으로 로그인</a></li>
       <li><a href="https://www.kakaocorp.com/page/service/service/KakaoTalk" class="kakao">카카오톡 계정으로 로그인</a> </li>
     </ul>
+    -->
   </main>
 
 </body>
