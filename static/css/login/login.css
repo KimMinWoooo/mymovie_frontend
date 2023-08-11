@@ -27,6 +27,7 @@ html, body, div, span, applet, object, iframe,
           font-size: 100%;
           font: inherit;
           vertical-align: baseline;
+          text-decoration: none;
       }
 li {
   list-style: none;
@@ -58,7 +59,6 @@ main {
   margin: 0 auto;
 }
 
-
 /* 로그인 또는 회원가입 header디자인 */
 h2 {
   color: #000;
@@ -85,15 +85,14 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .btn-x:hover {
   cursor: pointer;
 }
-
 /* main section 디자인 */
 .main-sec {
   border-top: 1px solid #C4C4C4;
 }
-
 /*아이디 비밀번호 입력란 디자인*/
 .wrapper {
   margin-left: 24px;
