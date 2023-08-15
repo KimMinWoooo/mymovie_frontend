@@ -81,7 +81,7 @@ h2 {
   background-color: #FFF;
   width: 16px;
   height: 16px; 
-  background-image: url(../../HTML/images/close.png);
+  background-image: url(/static/img/close.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -159,7 +159,7 @@ input::placeholder {
 
 
 /* 로그인 상태 유지 */
-.txt-hide {
+/* .txt-hide {
   overflow: hidden;
   width: 1px;
   height: 1px;
@@ -183,13 +183,14 @@ input::placeholder {
   width: 22px;
   height: 22px;
   vertical-align: -5px;
-  background: url(../../HTML/images/check-box.png) no-repeat;
+  background: url(/static/img/check-box.png) no-repeat;
   
   padding-right: 8px;
 }
 .labl-hold:hover{
   cursor: pointer;
-}
+} */
+
 
 /* 로그인 버튼 디자인 */
 .btn-login {
@@ -260,6 +261,9 @@ input::placeholder {
     background-color: #C4C4C4;
     margin-left: 13px;
   }
+  .usertype{
+    
+  }
 
 
 /* 다른 계정으로 로그인 하기 디자인 */
@@ -290,28 +294,28 @@ li a {
 }
 
 .google {
-  background: url(../../HTML/images/Google__G__Logo\ 1.png) no-repeat;
+  background: url(/static/img/Google__G__Logo\ 1.png) no-repeat;
   background-position: 3% 50%;
   border-radius: 5px;
   border: 1px solid #767676;
 }
 
 .facebook {
-  background: url(../../HTML/images/facebook.png) no-repeat;
+  background: url(/static/img/facebook.png) no-repeat;
   background-position: 3% 50%;
   border-radius: 5px;
   border: 1px solid #2D9CDB;
 }
 
 .naver {
-  background: url(../../HTML/images/naver-logo.png) no-repeat;
+  background: url(/static/img/naver-logo.png) no-repeat;
   background-position: 3% 50%;
   border-radius: 5px;
   border: 1px solid #00BF18;
 }
 
 .kakao {
-  background: url(../../HTML/images/message-circle.png) no-repeat;
+  background: url(/static/img/message-circle.png) no-repeat;
   background-position: 3% 50%;
   border-radius: 5px;
   border: 1px solid #F2C94C;

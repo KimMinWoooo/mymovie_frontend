@@ -48,3 +48,42 @@
 .wrapper-info-2{
   margin-right: -100px;
 }
+
+#btn_cafe_search {
+  float: right;
+  margin-right: 20px;
+}
+
+.write_cmu {
+  display: block;
+  margin-top: 40px; 
+  margin-left: 20px;
+}
+
+.link_btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s;
+}
+
+.link_btn:hover {
+  background-color: #adb49c;
+}
+
+body{
+  background-image: url(https://www.mexicoescultura.com/galerias/actividades/principal/land.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1000px;
+}
+
+h2 {
+  margin-top: 20px;
+  text-align: center;
+  color: #f0f0f0;
+}
