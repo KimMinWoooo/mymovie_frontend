@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMovie 회원가입 페이지</title>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/css/login/signup2.css">
+    <link rel="stylesheet" href="/static/css/login/reset.css">
+</head>
+<body>
+  <h1 class="a11y-hidden">MyMovie</h1>
+  <!-- 메인 section -->
+  <main class="big-wrapper">
+    <header>
+      <h2 class="a11y-hidden">회원가입 페이지</h2>
+      <a href="/templates/html/main/index.html"><img src="/static/img/logo-image.png" alt="로고이미지" class="logo-img"></a>
+      <p>MyMovie와 함께하기</p>
+    </header> 
+    
+    <section class="main-sec">
+      <form class="wrapper-idpw" action="#" target="#" method="post" name="signup" autocomplete="on">
+        <ul class="input-wrapper">
+          <li>
+            <label for="inpID" class="labl">아이디</label>
+            <input type="text" id="inpID" class="inp ID" placeholder="아이디를 입력해주세요"></input>
+          </li>
+  
+          <li>
+            <label for="inpPS" class="labl">비밀번호</label>
+
+            <input type="password" id="inpPS" class="inp PS" placeholder="비밀번호를 입력해주세요"></input>
+          </li>
+          
+          <li>
+            <label for="inpBt" class="labl">생년월일</label>
+
+            <input type="date" id="inpBt" class="inp Bt" data-placeholder="생년월일 선택"></input>
+          </li>
+          
+          <li>
+            <label for="inpPS" class="labl">이름</label>
+
+            <input type="name" id="inpN" class="inp N" placeholder="이름을 입력해주세요"></input>
+          </li>
+          
+          <li>
+            <label for="inpPS" class="labl">전화번호</label>
+
+            <input type="tel" id="inpT" class="inp T" placeholder="전화번호를 입력해주세요"></input>
+          </li>
+        </ul>
+        <section class="cancelAndjoin-input">
+
+          <input class="join-input" type="submit"  value="가입하기" 
+          style="color: #767676;
+          font-family: 'Spoqa Han Sans Neo';
+          font-size: 20px;
+          font-weight: 600;" >
+          <a href="/templates/html/login/login_page.html">
+            <input class="cancel-input" type="reset"  value="취소하기" 
+            style="color: #767676;
+            font-family: 'Spoqa Han Sans Neo';
+            font-size: 20px;
+            font-weight: 600;">
+          </a>
+        </section>
+
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

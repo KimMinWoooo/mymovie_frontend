@@ -30,6 +30,7 @@
   line-height: 60px;
   background-color: lightslategray;
 }
+
 .wrapper li a:hover{
   color: blue;
 }
@@ -49,28 +50,30 @@
   text-shadow:0 -1px 0 #222;  /* 그림자 색 */
   padding: 20px;
 }
+
 .wrapper-info-1 li {
-  line-height: 50px;
+  line-height: auto;
 }
+
 .wrapper-info-1 li a, .wrapper-info-2 li a{
   font-size:1.1em;
   color:#fff; 
   font-weight:600;  /* 글자 굵기 */
   padding:10px 30px; /* 간격 */
 }
+
 .wrapper-title{
   margin-left: -100px;
 }
+
 .wrapper-info-2{
   margin-right: -100px;
 }
 /*흠..*/
 body {
   width: 100%;
-  height: 100vw;
-  min-width: 1000px;
-  color: white;
-  font-family: "Noto Sans KR", sans-serif;
+  height: 70vw;
+  min-width: 700px;
 }
 
 /*검색창 꾸미기*/
@@ -79,24 +82,33 @@ body {
   justify-content: center;
   align-items: center;
 }
-.title h2 {
-  position: relative;
-  left: 110px;
-  top : 50px;
-  font-size : 2.5em;
-  font-weight: 500;
-  text-shadow: 0 -1px 0 #222;
-}
-.title{
+
+.wrapper-back{
   background-image: url(https://www.mexicoescultura.com/galerias/actividades/principal/land.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 300px;
 }
+
+.title{
+  position: absolute;
+}
+
+.title h2 {
+  font-size : 2.5em;
+  font-weight: 500;
+  text-shadow: 0 -1px 0 #222;
+  color: white;
+  font-family: "Noto Sans KR", sans-serif;
+  position: relative;
+  padding : 50px;
+  left: 15%;
+}
+
 #search-input {
   position: relative;
-  top: 100px;
+  top: 200px;
   width: 80%;
   height: 50px;
   border-radius: 25px;
@@ -106,7 +118,7 @@ body {
 
 #search-btn{  
   position: relative;
-  top: 100px;
+  top: 200px;
   width: 100px;
   height: 50px;
   border-radius: 25px;
@@ -119,10 +131,10 @@ display: flex;
 justify-content: center;
 align-items: center; */
 
-
+/* 장르 css */
 .select-genre{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   margin-right: 50px;
 }
@@ -134,4 +146,23 @@ select {
   width: 8%;
   height: 30px;
   font-size: 1.3em;
+}
+
+/* 영화 받아올 공간 */
+.box-wrapper{
+  display : flex;
+}
+
+.box{
+  position : relative;
+  top: 15px;
+  width: 300px;
+  height: 200px;
+  border: 2px solid red; 
+  margin:15px;
+  border-radius: 25px;
+}
+
+.box.one{
+  
 }
