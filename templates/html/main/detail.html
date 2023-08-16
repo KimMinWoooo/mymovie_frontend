@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>영화상세페이지</title>
   <link rel="stylesheet" href="/static/css/main/detail.css" />
+  <script src="/static/js/main/app.js" type="module"></script>
   <!-- <script src="../../JS/main/app.js" type="module"></script> -->
 </head>
 
@@ -31,4 +32,36 @@
           <li><a href="/templates/html/login/signup.html">회원가입</a></li>
           <li><a href="#">검색</a></li>
       </ul>
-  </header>
+      </header>
+
+    <!-- main -->
+    <main>
+      <div class="wrapper-back">
+        <div class="wrapper-box">
+          <div class="box">포스터</div>
+        </div>
+        <div class="wrapper-info-3">
+          <h1>영화제목</h1>
+          <p>줄거리 쏼라쏼라</p>
+          <div class="character">
+            <p>출연진</p>
+          </div>
+        </div>
+      </div>
+    <!-- 관련 영화 -->  
+      <div class="slider-container">
+        <button class="button left"><</button>
+        <div class="slider">
+          <div class="slider-inner">
+            <div class="box one"></div>
+            <div class="box two"></div>
+            <div class="box three"></div>
+            <div class="box four"></div>
+            <div class="box five"></div>
+            <div class="box six"></div>
+          </div>
+        </div>
+        <button class="button right">></button>
+      </div>
+    </main>
+  </div>
