@@ -137,10 +137,39 @@ align-items: center; */
   justify-content: center;
   align-items: center;
   margin-right: 50px;
+  margin-top: 20px;
 }
-.select-genre option {
-  background-color: chocolate; /* 작업 구역 확인용, 지워도 됨*/
+
+.select-genre li:hover{
+  font-weight: bold;
 }
+
+.select-genre li {
+  margin-right: 50px; 
+  background-color: rgb(222, 222, 255);
+  color: #363636;
+  border-color:  rgb(105, 105, 213);
+  border-radius: 20px; 
+  padding: 5px 20px; 
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.select-genre li.hover{
+  margin-right: 50px;
+  color: #000;
+  border-color:  rgb(105, 105, 213);
+  border-radius: 20px; 
+  padding: 5px 20px; 
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  background-color:  rgb(105, 105, 213);
+}
+
+.select-genre:not(:last-child) {
+  margin-right: 0; 
+}
+
 select {
   text-align: center;
   width: 8%;
