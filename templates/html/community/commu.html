@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="/static/css/community/commu.css"> <!-- 스타일시트 링크 추가 -->
 </head>
 <body>
+    <div id="container">
+        <header class="wrapper">
+          <div class="wrapper-title">
+            <a href="/templates/html/main/index.html">
+              <h1>MyMovie</h1>
+            </a>
+            <div class="wrapper-info-1">
+              <ul>
+                  <li><a href="/templates/html/main/detail.html">영화</a></li>
+                  <li><a href="/templates/html/community/maincommu.html">커뮤니티</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- 나머지부분 묶기 -->
+              <ul class="wrapper-info-2">
+                  <li><a href="/templates/html/login/login_page.html">로그인</a></li>
+                  <li><a href="/templates/html/login/signup.html">회원가입</a></li>
+                  <li><a href="#">검색</a></li>
+              </ul>
+        </header>
+    
     <div class="write-form">
         <form action="/board/post/new" method="post">
             <h2>자유게시판 글쓰기</h2>
