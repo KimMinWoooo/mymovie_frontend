@@ -2,13 +2,17 @@ const genreItems = document.querySelectorAll('.select-genre li');
 
 genreItems.forEach(item => {
   item.addEventListener('click', () => {
-    // 모든 li 요소의 클래스 제거
-    genreItems.forEach(item => {
-      item.classList.remove('hover');
+    const isActive = item.classList.contains('active'); 
+
+    genreItems.forEach(otherItem => {
+      otherItem.classList.remove('active');
     });
 
-    // 클릭한 li에 active 클래스 추가
-    item.classList.add('hover');
+    if (!isActive) {
+      item.classList.add('active');
+    }
 
+    const selectedGenre = item.getAttribute('data-value');
+    console.log('선택한 장르:', selectedGenre);
   });
 });

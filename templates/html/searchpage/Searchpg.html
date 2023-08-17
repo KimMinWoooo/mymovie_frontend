@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="widli=device-widli, initial-scale=1.0" />
+  <title>Movie</title>
+  <link rel="stylesheet" href="/static/css/searchpage/searchpg.css" />
+  <script src="/static/js/searchpage/searchpg.js" type="module"></script>
+</head>
+
+<body>
+  <div id="container">
+    <header class="wrapper">
+      <div class="wrapper-title">
+        <a href="/templates/html/main/index.html">
+          <h1>MyMovie</h1>
+        </a>
+        <div class="wrapper-info-1">
+          <ul>
+              <li><a href="/templates/html/main/detail.html">영화</a></li>
+              <li><a href="/templates/html/community/maincommu.html">커뮤니티</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 나머지부분 묶기 -->
+          <ul class="wrapper-info-2">
+              <li><a href="/templates/html/login/login_page.html">로그인</a></li>
+              <li><a href="/templates/html/login/signup.html">회원가입</a></li>
+              <li><a href="#">검색</a></li>
+          </ul>
+    </header>
+
+  <div class="wrapper-back">
+    <div class="title">
+     <h2>영화찾기 사이트 <br> MyMovie입니다.</h2>
+    </div>
+     <div>
+      <form class="search" action="#" meliod="post" name="movie">
+        <input type="text" id="search-input" name="searchMovie" placeholder="검색할 영화 제목을 입력해주세요." autofocus />      
+        <button type="submit" id="search-btn">검색</button>
+      </form>
+     </div>
+  </div>
+  
+  <div class="search-results">
+    <p id="search-message" class="hidden">검색 결과가 없습니다.</p>
+  </div>
+
+  <div class="slider-container">
+    <button class="button left"></button>
+    <div class="slider">
+      <div class="slider-inner">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+        <div class="box three">3</div>
+        <div class="box four">4</div>
+        <div class="box five">5</div>
+        <div class="box six">6</div>
+      </div>
+    </div>
+    <button class="button right">></button>
+  </div>
+
+</body>
+
+</html>
