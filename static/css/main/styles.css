@@ -213,6 +213,7 @@ img {
 .slider {
   width: calc(100% - 120px); /* 버튼의 너비를 빼줌 */
   overflow: hidden;
+  
 }
 
 .slider-inner {
