@@ -12,3 +12,11 @@ likeButton.addEventListener('click', () => {
     currentIconIndex = (currentIconIndex + 1) % icons.length;
     icons[currentIconIndex].classList.add('active');
 });
+
+
+const trailer = document.querySelector('.trailer')
+
+trailer.addEventListener('click', () => {
+
+    
+})
