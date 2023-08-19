@@ -92,11 +92,14 @@ body {
 
 .title-info p{
   display: inline;
+}
+
+.title-info div {
+  display: inline;
   position: relative;
   left: 490px;
   padding: 20px;
 }
-
 
 
 .like {
