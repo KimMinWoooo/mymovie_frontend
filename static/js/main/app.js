@@ -1,3 +1,4 @@
+// 장르
 const genreItems = document.querySelectorAll('.select-genre li');
 
 genreItems.forEach(item => {
@@ -17,6 +18,7 @@ genreItems.forEach(item => {
   });
 });
 
+// 검색 기능
 const searchBtn = document.getElementById('search-btn');
 searchBtn.addEventListener('click', function(event) {
   event.preventDefault();
@@ -34,3 +36,30 @@ searchBtn.addEventListener('click', function(event) {
   }
 
 });
+
+//slider bar
+const sliderInner = document.querySelector('.slider-inner');
+const leftButton = document.querySelector('.left');
+const rightButton = document.querySelector('.right');
+const slider = document.querySelector('.slider');
+
+const totalItems = document.querySelectorAll('.box').length;
+let currentIndex = 0;
+
+leftButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    updateSlider();
+});
+
+rightButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalItems;
+    updateSlider();
+});
+
+function updateSlider() {
+    const offset = currentIndex * -230; // 100px box width + 10px margin
+    sliderInner.style.transform = `translateX(${offset}px)`;
+}
+
+// 초기 슬라이더 위치 설정
+updateSlider();
