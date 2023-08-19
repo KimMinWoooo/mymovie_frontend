@@ -177,6 +177,25 @@ select {
   font-size: 1.3em;
 }
 
+/* 검색 */
+.search-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#search-message {
+  text-align: center;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Nanum Pen Script', 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+
 /* 영화 받아올 공간 */
 /*
 .box-wrapper{
