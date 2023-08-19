@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>마이페이지</title>
+  <link rel="stylesheet" href="/static/css/myPage/mypage.css"/>
+  <script src="/static/js/main/app.js" type="module"></script>
+</head>
+
+<body>
+  <div id="container">
+    <header class="wrapper">
+      <div class="wrapper-title">
+        <a href="index.html">
+          <h1>MyMovie</h1>
+        </a>
+        <div class="wrapper-info-1">
+          <ul>
+              <li><a href="detail.html">내 영화</a></li>
+              <li><a href="/templates/html/community/maincommu.html">커뮤니티</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 나머지부분 묶기 -->
+          <ul class="wrapper-info-2">
+              <li><a href="/templates/html/login/login_page.html">로그인</a></li>
+              <li><a href="/templates/html/login/signup.html">회원가입</a></li>
+              <li><a href="/templates/html/searchpage/Searchpg.html">검색</a></li>
+          </ul>
+    </header>
+    <main>
+      <form action="#" name="myinfo" method="#">
+        <h2>내 정보</h2>
+            <label for="inpID" class="">아이디</label>
+            <input type="email" id="inpID" class="inp ID" name="email"></input>
+            <br>
+            <label for="inpPS" class="">비밀번호</label>
+            <input type="password" id="inpPS" class="inp PS" name="password"></input>
+            <input type="reset" value="수정"><input type="submit" value="저장">
+            <br>
+            <label for="inpPS" class="">생년월일</label>
+            <input type="text" id="inpBt" class="inp Bt" name="birthday" maxlength="8"></input>
+            <br>
+            <label for="inpPS" class="">이름</label>
+            <input type="text" id="inpN" class="inp N" name="name"></input>
+            <br>
+            <label for="inpPS" class="">전화번호</label>
+            <input type="tel" id="inpT" class="inp T" name="tel"></input>
+      </form>
+    </main>
+  </body>
