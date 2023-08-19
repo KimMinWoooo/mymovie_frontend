@@ -90,17 +90,15 @@ body {
   left: 510px;
 }
 
-.title-info p{
+.title-info p, .title-info div{
   display: inline;
 }
 
 .title-info div {
-  display: inline;
   position: relative;
-  left: 490px;
+  left: 495px;
   padding: 20px;
 }
-
 
 .like {
   position: relative;
@@ -123,6 +121,25 @@ body {
   position: relative;
   left: 515px;
   top: 80px;
+}
+
+/* 출연진 */
+.card{
+  width: 138px;
+  height: 260px;
+  margin-right: 10px;
+  font-size: 18px;
+  margin-left: 61px;
+  border: 1px black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px lightslategray;  /* 그림자 색 */
+}
+.card img{
+  border-radius: 10px 10px 0px 0px;
+}
+.card p{
+  display: flex;
+  align-items:end;
 }
 
 /* 관련영화 */
@@ -148,7 +165,7 @@ h3 {
   transition: transform 0.3s ease-in-out;
 }
 
-.slider-inner > .box{
+.slider-inner-2 > .box{
   width: 220px;
   height: 330px;
   background-color: #ccc;
