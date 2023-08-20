@@ -90,7 +90,7 @@ h1 {
   transition: transform 0.3s ease-in-out;
 }
 
-.slider-inner > .box{
+.box{
   width: 220px;
   height: 330px;
   background-color: #ccc;
@@ -107,4 +107,28 @@ h1 {
   font-size: 1.5em;
   font-weight: 700;
   cursor: pointer;
+}
+
+.box-wrapper{
+  display : flex
+}
+
+.box-wrapper > button{
+  background-color: white;
+  font-size: 1.1em;
+  color: black;
+}
+
+.box{
+  position : relative;
+  top: 15px;
+  width: 220px;
+  height: 330px;
+  border: 2px solid red; 
+  margin:15px;
+  border-radius: 25px;
+}
+
+img {
+  border-radius: 25px;
 }
